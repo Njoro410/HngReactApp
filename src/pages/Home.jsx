@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react";
 import profile from "../image/1662971155353.jpeg";
 import slack from "../image/slack.png";
 import github from "../image/Icon.png";
-import zuri from "../image/zurilogo.svg";
-import good from "../image/I4G.png";
 import share from "../image/share.png";
 import more from "../image/more.png";
-
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-<div className="bg-white h-full w-full ">
+    <div className="bg-white h-full w-full ">
       <div className="flex items-center justify-center flex-col mt-12">
         <img
           id="profile__img"
@@ -90,7 +87,7 @@ const Home = () => {
           className="w-[90%] h-[68px]  md:h-[76px] bg-gray-300 border border-[#EAECF0] border-solid rounded-[8px] font-inter font-medium flex items-center text-center justify-center leading-[28px] text-[18px]"
           title="Get the free Zuri design book today ans start your design experience today"
         >
-          Contact Me
+          <Link to="/contact">Contact Me</Link>
         </a>
       </div>
       <div className="flex justify-center items-center px-[24px] py-0 gap-16 h-[72px] w-full">
@@ -100,23 +97,8 @@ const Home = () => {
           <img src={github} alt="github" />
         </a>
       </div>
-
-      <div className="container m-auto mt-9 flex justify-between py-[48px] border-t-2 flex-col md:flex-row">
-        <section className="p-2">
-          <img src={zuri} alt="Zuri Internship" />
-          {/* <p className="text-2xl font-normal font-inter">Zuri.Internship</p> */}
-        </section>
-        <section className="p-2">
-          <p className="font-inter font-normal text-[16px] leading-[24px] text-gray-500 ">
-            HNG Internship 9 Frontend Task
-          </p>
-        </section>
-        <section className="p-2">
-          <img src={good} alt="impressive for good" />
-        </section>
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
