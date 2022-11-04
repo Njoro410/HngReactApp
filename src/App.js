@@ -18,7 +18,7 @@ function App() {
         />
         <img
           src={share}
-          alt="share image"
+          alt="share"
           className="absolute w-[40px] h-[40px] right-[208px] top-[50px] bg-white hidden md:flex"
         />
         <img
@@ -81,6 +81,13 @@ function App() {
           title="Get the free Zuri design book today ans start your design experience today"
         >
           Design Books
+        </a>
+        <a
+          id="contact"
+          className="w-[90%] h-[68px]  md:h-[76px] bg-gray-300 border border-[#EAECF0] border-solid rounded-[8px] font-inter font-medium flex items-center text-center justify-center leading-[28px] text-[18px]"
+          title="Get the free Zuri design book today ans start your design experience today"
+        >
+          Contact Me
         </a>
       </div>
       <div className="flex justify-center items-center px-[24px] py-0 gap-16 h-[72px] w-full">
