@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="px-5 w-screen">
         <form className="max-w-[840px] m-auto">
           <p className="font-inter w-[448px] h-[44px] not-italic font-semibold text-3xl tracking-[-0.02rem]">Contact Me</p>
-          <p className="font-inter not-italic font-normal text-sm leading-[30px]">
+          <p className="font-inter not-italic font-normal text-xl leading-[30px] pb-5">
             Hi there, contact me to ask me about anything you have in mind.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -22,14 +22,14 @@ const Contact = () => {
             <section className="flex flex-col md:my-4">
               <label htmlFor="last_name" className="font-inter not-italic font-medium text-sm leading-5 text-[#344054]">Last name</label>
               <input
-                className="border py-3 px-4 gap-2  rounded-[8px] shadow-sm placeholder:font-inter placeholder:font-normal placeholder:text-base placeholder-[#667085]"
+                className="border py-3 mb-5 md:mb-0 px-4 gap-2  rounded-[8px] shadow-sm placeholder:font-inter placeholder:font-normal placeholder:text-base placeholder-[#667085]"
                 type="text"
                 id="last_name"
                 placeholder="Enter your last name"
               />
             </section>
           </div>
-          <label htmlFor="email" className="my-4 font-inter not-italic font-medium text-sm leading-5 text-[#344054]">Email</label>
+          <label htmlFor="email" className="py-4 font-inter not-italic font-medium text-sm leading-5 text-[#344054]">Email</label>
           <input
             className="border p-3 w-full mb-3 rounded-[8px] shadow-sm placeholder:w-[320px] placeholder:h-[24px] placeholder:font-inter placeholder:font-normal placeholder:text-base placeholder-[#667085]"
             type="email"
