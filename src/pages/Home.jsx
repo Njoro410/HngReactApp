@@ -85,9 +85,8 @@ const Home = () => {
         <a
           id="contact"
           className="w-[90%] h-[68px]  md:h-[76px] bg-gray-300 border border-[#EAECF0] border-solid rounded-[8px] font-inter font-medium flex items-center text-center justify-center leading-[28px] text-[18px]"
-          title="Get the free Zuri design book today ans start your design experience today"
         >
-          <Link to="/contact">Contact Me</Link>
+          <Link to="/contact" className="h-full w-full flex items-center justify-center">Contact Me</Link>
         </a>
       </div>
       <div className="flex justify-center items-center px-[24px] py-0 gap-16 h-[72px] w-full">
